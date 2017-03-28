@@ -10,4 +10,11 @@
  */
 
 export default function(x, y) {
+  x = +x;
+  y = +y;
+  var result = 1;
+  for (var i = y; i > 0; i--) {
+    result *= x;
+  }
+  return '' + result;
 };
